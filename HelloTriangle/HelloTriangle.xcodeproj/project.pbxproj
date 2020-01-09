@@ -1,0 +1,404 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A23D460D20B5647A00C4A8C4 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A23D460A20B5647900C4A8C4 /* CoreFoundation.framework */; };
+		A23D460E20B5647A00C4A8C4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A23D460B20B5647A00C4A8C4 /* CoreGraphics.framework */; };
+		A23D460F20B5647A00C4A8C4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A23D460C20B5647A00C4A8C4 /* QuartzCore.framework */; };
+		A23D461120B5649900C4A8C4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A23D461020B5649900C4A8C4 /* UIKit.framework */; };
+		A23D461320B564A000C4A8C4 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A23D461220B564A000C4A8C4 /* OpenGLES.framework */; };
+		A23D461520B564D100C4A8C4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A23D461420B564D100C4A8C4 /* Foundation.framework */; };
+		A244B5C0234A045B00045BD2 /* Camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A244B5BE234A045B00045BD2 /* Camera.cpp */; };
+		A244B5C3234A179600045BD2 /* Shader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A244B5C1234A179600045BD2 /* Shader.cpp */; };
+		A2A775C520B468EC00F3CABB /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = A2A775C420B468EC00F3CABB /* AppDelegate.mm */; };
+		A2A775CD20B468EC00F3CABB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2A775CC20B468EC00F3CABB /* Assets.xcassets */; };
+		A2A775D320B468EC00F3CABB /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = A2A775D220B468EC00F3CABB /* main.mm */; };
+		A2A775DB20B469C400F3CABB /* GLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = A2A775DA20B469C400F3CABB /* GLView.mm */; };
+		A2A775DE20B470E300F3CABB /* RenderEngine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A2A775DC20B470E300F3CABB /* RenderEngine.cpp */; };
+		A2C6A2F42325FE710023F719 /* tgaimage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A2C6A2F22325FE710023F719 /* tgaimage.cpp */; };
+		A2C6A2F7232676BF0023F719 /* Mesh.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A2C6A2F5232676BF0023F719 /* Mesh.cpp */; };
+		FA0FE53423305DEA00429E23 /* obj in Resources */ = {isa = PBXBuildFile; fileRef = FA0FE53323305DEA00429E23 /* obj */; };
+		FA5535A123328A3B00A4C036 /* ResourceManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = FA5535A023328A3B00A4C036 /* ResourceManager.mm */; };
+		FA7F562D232D383700F11A5C /* model.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA7F562C232D383700F11A5C /* model.cpp */; };
+		FA9EBAA420C60738006888AE /* Simple.frag in Resources */ = {isa = PBXBuildFile; fileRef = FA9EBAA320C60738006888AE /* Simple.frag */; };
+		FA9EBAA620C60769006888AE /* Simple.vert in Resources */ = {isa = PBXBuildFile; fileRef = FA9EBAA520C60769006888AE /* Simple.vert */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A23D460A20B5647900C4A8C4 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		A23D460B20B5647A00C4A8C4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A23D460C20B5647A00C4A8C4 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		A23D461020B5649900C4A8C4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A23D461220B564A000C4A8C4 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		A23D461420B564D100C4A8C4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A244B5BE234A045B00045BD2 /* Camera.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Camera.cpp; sourceTree = "<group>"; };
+		A244B5BF234A045B00045BD2 /* Camera.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Camera.hpp; sourceTree = "<group>"; };
+		A244B5C1234A179600045BD2 /* Shader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Shader.cpp; sourceTree = "<group>"; };
+		A244B5C2234A179600045BD2 /* Shader.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Shader.hpp; sourceTree = "<group>"; };
+		A2A775C020B468EC00F3CABB /* HelloTriangle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloTriangle.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2A775C320B468EC00F3CABB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A2A775C420B468EC00F3CABB /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
+		A2A775CC20B468EC00F3CABB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A2A775D220B468EC00F3CABB /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
+		A2A775D920B469C400F3CABB /* GLView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLView.h; sourceTree = "<group>"; };
+		A2A775DA20B469C400F3CABB /* GLView.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = GLView.mm; sourceTree = "<group>"; };
+		A2A775DC20B470E300F3CABB /* RenderEngine.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = RenderEngine.cpp; sourceTree = "<group>"; };
+		A2A775DD20B470E300F3CABB /* RenderEngine.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = RenderEngine.hpp; sourceTree = "<group>"; };
+		A2C6A2F22325FE710023F719 /* tgaimage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tgaimage.cpp; sourceTree = "<group>"; };
+		A2C6A2F32325FE710023F719 /* tgaimage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tgaimage.h; sourceTree = "<group>"; };
+		A2C6A2F5232676BF0023F719 /* Mesh.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Mesh.cpp; sourceTree = "<group>"; };
+		A2C6A2F6232676BF0023F719 /* Mesh.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Mesh.hpp; sourceTree = "<group>"; };
+		FA0FE53323305DEA00429E23 /* obj */ = {isa = PBXFileReference; lastKnownFileType = folder; name = obj; path = HelloTriangle/obj; sourceTree = "<group>"; };
+		FA4FED8F20C3D70C00817B0F /* RenderCommonDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RenderCommonDefine.h; sourceTree = "<group>"; };
+		FA5535A023328A3B00A4C036 /* ResourceManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ResourceManager.mm; sourceTree = "<group>"; };
+		FA5535A223328CB900A4C036 /* Interfaces.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Interfaces.hpp; sourceTree = "<group>"; };
+		FA5535A323328F8100A4C036 /* Matrix.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Matrix.hpp; sourceTree = "<group>"; };
+		FA5535A423328F8100A4C036 /* Vector.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Vector.hpp; sourceTree = "<group>"; };
+		FA5535A523328FA300A4C036 /* Quaternion.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Quaternion.hpp; sourceTree = "<group>"; };
+		FA7F562B232D383700F11A5C /* model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = model.h; sourceTree = "<group>"; };
+		FA7F562C232D383700F11A5C /* model.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = model.cpp; sourceTree = "<group>"; };
+		FA9D3FA4232F0460005905CC /* geometry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = geometry.h; sourceTree = "<group>"; };
+		FA9EBAA320C60738006888AE /* Simple.frag */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Simple.frag; sourceTree = "<group>"; };
+		FA9EBAA520C60769006888AE /* Simple.vert */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Simple.vert; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A2A775BD20B468EC00F3CABB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A23D461520B564D100C4A8C4 /* Foundation.framework in Frameworks */,
+				A23D461320B564A000C4A8C4 /* OpenGLES.framework in Frameworks */,
+				A23D461120B5649900C4A8C4 /* UIKit.framework in Frameworks */,
+				A23D460D20B5647A00C4A8C4 /* CoreFoundation.framework in Frameworks */,
+				A23D460E20B5647A00C4A8C4 /* CoreGraphics.framework in Frameworks */,
+				A23D460F20B5647A00C4A8C4 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A23D460920B5647900C4A8C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A23D461420B564D100C4A8C4 /* Foundation.framework */,
+				A23D461220B564A000C4A8C4 /* OpenGLES.framework */,
+				A23D461020B5649900C4A8C4 /* UIKit.framework */,
+				A23D460A20B5647900C4A8C4 /* CoreFoundation.framework */,
+				A23D460B20B5647A00C4A8C4 /* CoreGraphics.framework */,
+				A23D460C20B5647A00C4A8C4 /* QuartzCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A2A775B720B468EC00F3CABB = {
+			isa = PBXGroup;
+			children = (
+				FA0FE53323305DEA00429E23 /* obj */,
+				A2A775C220B468EC00F3CABB /* HelloTriangle */,
+				A2A775C120B468EC00F3CABB /* Products */,
+				A23D460920B5647900C4A8C4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A2A775C120B468EC00F3CABB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A2A775C020B468EC00F3CABB /* HelloTriangle.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A2A775C220B468EC00F3CABB /* HelloTriangle */ = {
+			isa = PBXGroup;
+			children = (
+				FA5535A523328FA300A4C036 /* Quaternion.hpp */,
+				FA5535A323328F8100A4C036 /* Matrix.hpp */,
+				FA5535A423328F8100A4C036 /* Vector.hpp */,
+				FA5535A223328CB900A4C036 /* Interfaces.hpp */,
+				FA5535A023328A3B00A4C036 /* ResourceManager.mm */,
+				FA9D3FA4232F0460005905CC /* geometry.h */,
+				FA7F562C232D383700F11A5C /* model.cpp */,
+				FA7F562B232D383700F11A5C /* model.h */,
+				A2C6A2F22325FE710023F719 /* tgaimage.cpp */,
+				A2C6A2F32325FE710023F719 /* tgaimage.h */,
+				FA9EBAA220C606E0006888AE /* Shaders */,
+				A2A775D920B469C400F3CABB /* GLView.h */,
+				A2A775DA20B469C400F3CABB /* GLView.mm */,
+				A2A775C320B468EC00F3CABB /* AppDelegate.h */,
+				A2A775C420B468EC00F3CABB /* AppDelegate.mm */,
+				A2A775CC20B468EC00F3CABB /* Assets.xcassets */,
+				A2A775D220B468EC00F3CABB /* main.mm */,
+				A2A775DC20B470E300F3CABB /* RenderEngine.cpp */,
+				A2A775DD20B470E300F3CABB /* RenderEngine.hpp */,
+				FA4FED8F20C3D70C00817B0F /* RenderCommonDefine.h */,
+				A2C6A2F5232676BF0023F719 /* Mesh.cpp */,
+				A2C6A2F6232676BF0023F719 /* Mesh.hpp */,
+				A244B5BE234A045B00045BD2 /* Camera.cpp */,
+				A244B5BF234A045B00045BD2 /* Camera.hpp */,
+				A244B5C1234A179600045BD2 /* Shader.cpp */,
+				A244B5C2234A179600045BD2 /* Shader.hpp */,
+			);
+			path = HelloTriangle;
+			sourceTree = "<group>";
+		};
+		FA9EBAA220C606E0006888AE /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				FA9EBAA320C60738006888AE /* Simple.frag */,
+				FA9EBAA520C60769006888AE /* Simple.vert */,
+			);
+			path = Shaders;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A2A775BF20B468EC00F3CABB /* HelloTriangle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A2A775D620B468EC00F3CABB /* Build configuration list for PBXNativeTarget "HelloTriangle" */;
+			buildPhases = (
+				A2A775BC20B468EC00F3CABB /* Sources */,
+				A2A775BD20B468EC00F3CABB /* Frameworks */,
+				A2A775BE20B468EC00F3CABB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HelloTriangle;
+			productName = HelloTriangle;
+			productReference = A2A775C020B468EC00F3CABB /* HelloTriangle.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A2A775B820B468EC00F3CABB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = Iteevo;
+				TargetAttributes = {
+					A2A775BF20B468EC00F3CABB = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = A2A775BB20B468EC00F3CABB /* Build configuration list for PBXProject "HelloTriangle" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A2A775B720B468EC00F3CABB;
+			productRefGroup = A2A775C120B468EC00F3CABB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A2A775BF20B468EC00F3CABB /* HelloTriangle */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A2A775BE20B468EC00F3CABB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA9EBAA420C60738006888AE /* Simple.frag in Resources */,
+				A2A775CD20B468EC00F3CABB /* Assets.xcassets in Resources */,
+				FA0FE53423305DEA00429E23 /* obj in Resources */,
+				FA9EBAA620C60769006888AE /* Simple.vert in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A2A775BC20B468EC00F3CABB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2C6A2F7232676BF0023F719 /* Mesh.cpp in Sources */,
+				FA7F562D232D383700F11A5C /* model.cpp in Sources */,
+				A2A775DB20B469C400F3CABB /* GLView.mm in Sources */,
+				A2C6A2F42325FE710023F719 /* tgaimage.cpp in Sources */,
+				A244B5C3234A179600045BD2 /* Shader.cpp in Sources */,
+				A244B5C0234A045B00045BD2 /* Camera.cpp in Sources */,
+				A2A775D320B468EC00F3CABB /* main.mm in Sources */,
+				FA5535A123328A3B00A4C036 /* ResourceManager.mm in Sources */,
+				A2A775C520B468EC00F3CABB /* AppDelegate.mm in Sources */,
+				A2A775DE20B470E300F3CABB /* RenderEngine.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A2A775D420B468EC00F3CABB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A2A775D520B468EC00F3CABB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A2A775D720B468EC00F3CABB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W4RNMQM9E6;
+				INFOPLIST_FILE = HelloTriangle/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Iteevo.HelloTriangle.lin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		A2A775D820B468EC00F3CABB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W4RNMQM9E6;
+				INFOPLIST_FILE = HelloTriangle/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Iteevo.HelloTriangle.lin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A2A775BB20B468EC00F3CABB /* Build configuration list for PBXProject "HelloTriangle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2A775D420B468EC00F3CABB /* Debug */,
+				A2A775D520B468EC00F3CABB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A2A775D620B468EC00F3CABB /* Build configuration list for PBXNativeTarget "HelloTriangle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2A775D720B468EC00F3CABB /* Debug */,
+				A2A775D820B468EC00F3CABB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A2A775B820B468EC00F3CABB /* Project object */;
+}
